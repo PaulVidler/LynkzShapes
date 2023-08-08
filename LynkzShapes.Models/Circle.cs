@@ -2,10 +2,11 @@
 {
     public class Circle : IShape
     {
-        private double radius;
+        private double _radius;
+
         public Circle(double radius)
         {
-            this.radius = radius;
+            _radius = radius;
         }
 
         public string GetShapeType()
@@ -17,7 +18,7 @@
         {
             return new Dictionary<string, double>
         {
-            { "Radius", radius }
+            { "Radius", _radius }
         };
         }
     }

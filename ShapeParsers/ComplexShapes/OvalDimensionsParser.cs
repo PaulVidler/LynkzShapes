@@ -1,5 +1,4 @@
-﻿using LynkzShapes.LynkzShapes.Models;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace LynkzShapes.ShapeParsers.ComplexShapes
 {

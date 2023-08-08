@@ -1,5 +1,4 @@
-﻿using LynkzShapes.LynkzShapes.Models;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace LynkzShapes.ShapeParsers.ComplexShapes
 {
@@ -10,10 +9,10 @@ namespace LynkzShapes.ShapeParsers.ComplexShapes
             // Regular expression pattern to find numbers followed by terms for sides
             string sidePattern = @"\bside\s*[abc]?\s*(?:of)?\s*(\d+(\.\d+)?)";
 
-            // Find the matches for side patterns in the input string
+            // Find the matches for side patterns
             MatchCollection sideMatches = Regex.Matches(input, sidePattern, RegexOptions.IgnoreCase);
 
-            // Initialize sideA, sideB, and sideC with NaN (Not-a-Number)
+            // Initialize sideA, sideB, and sideC with 0
             double sideA = 0;
             double sideB = 0;
             double sideC = 0;
@@ -24,7 +23,7 @@ namespace LynkzShapes.ShapeParsers.ComplexShapes
                 string sideKey = match.Value.ToLower();
                 double sideValue = double.Parse(match.Groups[1].Value);
 
-                // Determine which side the value belongs to
+                // assign values accordingly
                 if (sideKey.Contains("side a"))
                 {
                     sideA = sideValue;

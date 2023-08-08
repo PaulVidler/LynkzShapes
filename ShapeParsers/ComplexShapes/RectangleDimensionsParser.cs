@@ -22,7 +22,7 @@ namespace LynkzShapes.ShapeParsers.ComplexShapes
             double width = 0;
             double height = 0;
 
-            // Check if valid width is found, if yes, extract and store the value as the width
+            // Check if valid width is found, if yes, extract and storeas  width
             if (widthMatch1.Success && double.TryParse(widthMatch1.Groups[2].Value, out double parsedWidth1))
             {
                 width = parsedWidth1;
@@ -32,7 +32,7 @@ namespace LynkzShapes.ShapeParsers.ComplexShapes
                 width = parsedWidth2;
             }
 
-            // Check if valid height is found, if yes, extract and store the value as the height
+            // Check if valid height is found, if yes, extract and store as height
             if (heightMatch1.Success && double.TryParse(heightMatch1.Groups[2].Value, out double parsedHeight1))
             {
                 height = parsedHeight1;

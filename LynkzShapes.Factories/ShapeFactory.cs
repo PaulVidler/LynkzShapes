@@ -2,7 +2,6 @@
 using LynkzShapes.LynkzShapes.Models;
 using LynkzShapes.ShapeParsers.ComplexShapes;
 using LynkzShapes.ShapeParsers.SingleSidedDimensionsParser;
-using System.Drawing;
 
 namespace LynkzShapes.Factories
 {

@@ -2,13 +2,13 @@
 {
     public class IsoscelesTriangle : IShape
     {
-        private double baseLength;
-        private double height;
+        private double _baseLength;
+        private double _height;
 
         public IsoscelesTriangle(double baseLength, double height)
         {
-            this.baseLength = baseLength;
-            this.height = height;
+            _baseLength = baseLength;
+            _height = height;
         }
 
         public string GetShapeType()
@@ -20,8 +20,8 @@
         {
             return new Dictionary<string, double>
         {
-            { "Base Length", baseLength },
-            { "Height", height }
+            { "Base Length", _baseLength },
+            { "Height", _height }
         };
         }
     }

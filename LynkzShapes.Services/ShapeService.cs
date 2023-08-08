@@ -1,7 +1,6 @@
 ﻿using global::LynkzShapes.Factories;
 using LynkzShapes.LynkzShapes.Models;
 using LynkzShapes.LynkzShapes.Services;
-using System;
 
 namespace LynkzShapes.Services
 {
@@ -24,7 +23,7 @@ namespace LynkzShapes.Services
         {
             try
             {
-                // Pass the shape type and dimensions to the factory to create the shape.
+                // Pass the shape type and dimensions to factory
                 IShape shape = shapeFactory.CreateShape(shapeDescription);
 
                 if (shape == null)

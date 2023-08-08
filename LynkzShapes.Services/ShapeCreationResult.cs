@@ -1,6 +1,4 @@
-﻿using LynkzShapes.LynkzShapes.Models;
-
-namespace LynkzShapes.LynkzShapes.Services
+﻿namespace LynkzShapes.LynkzShapes.Services
 {
     public class ShapeCreationResult
     {

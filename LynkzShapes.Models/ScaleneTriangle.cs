@@ -2,15 +2,15 @@
 {
     public class ScaleneTriangle : IShape
     {
-        private double sideA;
-        private double sideB;
-        private double sideC;
+        private double _sideA;
+        private double _sideB;
+        private double _sideC;
 
         public ScaleneTriangle(double sideA, double sideB, double sideC)
         {
-            this.sideA = sideA;
-            this.sideB = sideB;
-            this.sideC = sideC;
+            _sideA = sideA;
+            _sideB = sideB;
+            _sideC = sideC;
         }
 
         public string GetShapeType()
@@ -22,9 +22,9 @@
         {
             return new Dictionary<string, double>
         {
-            { "Side A", sideA },
-            { "Side B", sideB },
-            { "Side C", sideC }
+            { "Side A", _sideA },
+            { "Side B", _sideB },
+            { "Side C", _sideC }
         };
         }
     }

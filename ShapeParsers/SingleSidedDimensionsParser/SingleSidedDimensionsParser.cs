@@ -1,8 +1,4 @@
-﻿using LynkzShapes.Factories;
-using System.Text.RegularExpressions;
-using System.Collections.Generic;
-using LynkzShapes.LynkzShapes.Models;
-
+﻿using System.Text.RegularExpressions;
 namespace LynkzShapes.ShapeParsers.SingleSidedDimensionsParser
 {
     public static class SingleSidedDimensionsParser 
@@ -17,7 +13,6 @@ namespace LynkzShapes.ShapeParsers.SingleSidedDimensionsParser
 
             return new Dictionary<string, double>
             {
-                //{ "SideLength", Convert.ToDouble(sideMatch) }
                 { "SideLength", 100.00 }
             };
         }

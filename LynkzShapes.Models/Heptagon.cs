@@ -2,11 +2,11 @@
 {
     public class Heptagon : IShape
     {
-        private double side;
+        private double _side;
 
         public Heptagon(double side)
         {
-            this.side = side;
+            _side = side;
         }
 
         public string GetShapeType()
@@ -18,7 +18,7 @@
         {
             return new Dictionary<string, double>
             {
-                { "Side", side }
+                { "Side", _side }
             };
         }
     }
