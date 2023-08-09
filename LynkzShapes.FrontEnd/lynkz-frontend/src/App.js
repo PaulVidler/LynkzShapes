@@ -11,6 +11,8 @@ import EquilateralTriangle from './components/shapes/EquilateralTriangle';
 import Pentagon from './components/shapes/Pentagon';
 import CircleShape from './components/shapes/CircleShape';
 import Oval from './components/shapes/Oval';
+import ShapeCreator from "./components/ShapeCreator";
+import axios from 'axios';
 
 function App() {
   
@@ -18,7 +20,8 @@ function App() {
     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
       <div>
         <h1>Shape Examples</h1>
-        <Rectangle width={300} height={300} /> {/*Square*/}
+        <ShapeCreator />
+        {/* <Rectangle width={300} height={300} />
         <Rectangle width={90} height={300} />
         <Octagon sideLength={100} />
         <Hexagon sideLength={80} />
@@ -29,7 +32,7 @@ function App() {
         <EquilateralTriangle sideLength={150} />
         <Pentagon sideLength={100} />
         <CircleShape radius={80} />
-        <Oval width={200} height={100} />
+        <Oval width={200} height={100} /> */}
       </div>
     </div>
   );

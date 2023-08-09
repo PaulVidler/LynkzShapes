@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"; // Import PropTypes for prop validation
 import "../../App.css"; // Import CSS file for styling (create this file in the same directory)
 
+// come back to this for DRY. There's no need for some many polygons with the same prop.
 function Polygon({ sideLength, sides }) {
   const polygonStyle = {
     width: `${sideLength}px`,
