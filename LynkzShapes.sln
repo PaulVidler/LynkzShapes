@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LynkzShapes", "LynkzShapes.csproj", "{5B8DE4BB-2A64-4937-99A3-05EEF33696AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LynkzShapes", "LynkzShapes.csproj", "{5B8DE4BB-2A64-4937-99A3-05EEF33696AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LynkzShapes.API.Tests", "..\LynkzShapes.API.Tests\LynkzShapes.API.Tests.csproj", "{A22726B0-510F-4C2F-B11A-462B69D05404}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5B8DE4BB-2A64-4937-99A3-05EEF33696AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8DE4BB-2A64-4937-99A3-05EEF33696AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8DE4BB-2A64-4937-99A3-05EEF33696AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22726B0-510F-4C2F-B11A-462B69D05404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22726B0-510F-4C2F-B11A-462B69D05404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22726B0-510F-4C2F-B11A-462B69D05404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22726B0-510F-4C2F-B11A-462B69D05404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

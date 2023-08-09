@@ -51,6 +51,9 @@ namespace LynkzShapes.Factories
                 case "scalene triangle":
                     var scaleneDimensions = ScaleneTriangleDimensionsParser.ParseShape(shapeDescription);
                     return new ScaleneTriangle(scaleneDimensions["SideA"], scaleneDimensions["SideB"], scaleneDimensions["SideC"]);
+                case "circle":
+                    var circleDimensions = CircleDimensionsParser.ParseShape(shapeDescription);
+                    return new Circle(circleDimensions["Radius"]);
                 // Add other shapes as needed.
                 default:
                     break;

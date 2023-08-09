@@ -13,7 +13,7 @@ namespace LynkzShapes.ShapeParsers.SingleSidedDimensionsParser
 
             return new Dictionary<string, double>
             {
-                { "SideLength", 100.00 }
+                { "SideLength", Convert.ToDouble(sideMatch) }
             };
         }
     }
