@@ -15,6 +15,9 @@ The backend API is built using ASP.NET Core and utilizes the Microsoft.AspNetCor
 
 - Create and visualize various shapes with dimensions.
 - Swagger API documentation available at [API Documentation](#swagger-api-documentation).
+- Factory pattern in back end for newing up of class instances
+- Unit tests - Basic due to time limitations, but included.
+- No front end tests as I am out of time.
 
 ## Prerequisites
 
