@@ -14,7 +14,7 @@ function Heptagon({ sideLength }) {
           x={centerX}
           y={centerX}
           radius={radius}
-          fill="green"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

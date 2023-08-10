@@ -23,7 +23,7 @@
         {
             return new Dictionary<string, double>
         {
-            { "Base Length", _baseLength },
+            { "BaseLength", _baseLength },
             { "Height", _height },
             { "Skew", _skew }
         };

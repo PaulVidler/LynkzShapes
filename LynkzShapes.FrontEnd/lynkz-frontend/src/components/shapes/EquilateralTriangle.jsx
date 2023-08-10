@@ -22,7 +22,7 @@ function EquilateralTriangle({ sideLength }) {
         <Line
           points={trianglePoints}
           closed
-          fill="pink"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

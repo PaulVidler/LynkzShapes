@@ -18,13 +18,16 @@ function ScaleneTriangle({ sideA, sideB, sideC }) {
 
   const trianglePoints = [pointAx, pointAy, pointBx, pointBy, pointCx, pointCy, pointAx, pointAy];
 
+  // to do:  Stick in an error toast for issues with a non-closing shape.
+
+
   return (
     <Stage width={sideC} height={sideB}>
       <Layer>
         <Line
           points={trianglePoints}
           closed
-          fill="orange"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

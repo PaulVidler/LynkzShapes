@@ -22,9 +22,9 @@
         {
             return new Dictionary<string, double>
         {
-            { "Side A", _sideA },
-            { "Side B", _sideB },
-            { "Side C", _sideC }
+            { "SideA", _sideA },
+            { "SideB", _sideB },
+            { "SideC", _sideC }
         };
         }
     }

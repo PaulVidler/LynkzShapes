@@ -13,7 +13,7 @@ function CircleShape({ radius }) {
           x={centerX}
           y={centerY}
           radius={radius}
-          fill="blue"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

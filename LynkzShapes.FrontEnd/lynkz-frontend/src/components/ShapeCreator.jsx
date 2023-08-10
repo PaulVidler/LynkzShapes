@@ -1,15 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Oval from './shapes/Oval'; 
-import Square from './shapes/Square'; 
-import Circle from './shapes/CircleShape'; 
-import Pentagon from './shapes/Pentagon'; 
-import Hexagon from './shapes/Hexagon'; 
-import Heptagon from './shapes/Heptagon'; 
-import Octagon from './shapes/Octagon'; 
-import EquilateralTriangle from './shapes/EquilateralTriangle';
-import Rectangle from './shapes/Rectangle';
-
+import { Container, Form, Button } from 'react-bootstrap';
+import ShapeRenderer from './ShapeRenderer';
 
 const ShapeCreator = () => {
   const [shapeDescription, setShapeDescription] = useState('');
@@ -32,52 +24,30 @@ const ShapeCreator = () => {
     }
   };
 
-  // this works for Oval
-//   const renderShape = () => {
-//     console.log(shapeDimensions);
-//     console.log(shapeType);
-//     if (errorMessage == null) {
-//       return <Oval width={shapeDimensions.Width} height={shapeDimensions.Height} />;
-//     }
-//     return null;
-//   };
-
-  const renderShape = () => {
-    if (errorMessage == null) {
-              if (shapeType === "Oval") {
-                return <Oval width={shapeDimensions.Width} height={shapeDimensions.Height} />;
-              } else if (shapeType === "Square") {
-                return <Square sideLength={shapeDimensions.Side} />;
-              } else if (shapeType === "Circle") {
-                return <Circle radius={shapeDimensions.Radius} />;
-              } else if (shapeType === "Pentagon") {
-                return <Pentagon sideLength={shapeDimensions.Side} />;
-              } else if (shapeType === "Heptagon") {
-                return <Heptagon sideLength={shapeDimensions.Side} />;
-              } else if (shapeType === "Hexagon") {
-                return <Hexagon sideLength={shapeDimensions.Side} />;
-              } else if (shapeType === "Equilateral Triangle") {
-                return <EquilateralTriangle sideLength={shapeDimensions.Side} />;
-              } else if (shapeType === "Octagon") {
-                return <Octagon sideLength={shapeDimensions.Side} />;
-              } else if (shapeType === "Rectangle") {
-                return <Rectangle width={shapeDimensions.Width} height={shapeDimensions.Height} />;
-              }
-            }
-    return null;
-  };
-
-return (
-    <div>
-      <input
-        type="text"
-        value={shapeDescription}
-        onChange={(e) => setShapeDescription(e.target.value)}
+  return (
+    <Container>
+      <Form 
+        style={{marginBottom: "3rem"}}>
+        <Form.Group controlId="shapeDescription">
+          <Form.Label style={{marginRight: "1rem", color: "#a0b43b"}}><h1>Shape Description</h1></Form.Label>
+          <Form.Control
+            type="text"
+            value={shapeDescription}
+            onChange={(e) => setShapeDescription(e.target.value)}
+            style={{marginRight: "1rem"}}
+          />
+          <Button variant="primary" onClick={handleSubmit}>Submit</Button>
+        </Form.Group>
+        
+      </Form>
+      <ShapeRenderer
+        shapeType={shapeType}
+        shapeDimensions={shapeDimensions}
+        errorMessage={errorMessage}
       />
-      <button onClick={handleSubmit}>Submit</button>
-      {renderShape()}
-    </div>
+    </Container>
   );
 };
 
 export default ShapeCreator;
+

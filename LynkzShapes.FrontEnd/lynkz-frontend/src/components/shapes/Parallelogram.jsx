@@ -1,37 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Stage, Layer, Line } from "react-konva";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Stage, Layer, Line } from 'react-konva';
 
-function Parallelogram({ width, height, skew }) {
-  const radians = (skew * Math.PI) / 180;
-  const skewOffset = height * Math.tan(radians);
-
-  const pointAx = skewOffset;
-  const pointAy = 0;
-
-  const pointBx = width + skewOffset;
-  const pointBy = 0;
-
-  const pointCx = width;
-  const pointCy = height;
-
-  const pointDx = 0;
-  const pointDy = height;
-
-  const parallelogramPoints = [
-    pointAx, pointAy,
-    pointBx, pointBy,
-    pointCx, pointCy,
-    pointDx, pointDy,
-  ];
+function Parallelogram({ baseLength, height, skew }) {
+  const topRight = { x: baseLength, y: 0 };
+  const topLeft = { x: 0 + skew, y: 0 };
+  const bottomRight = { x: baseLength - skew, y: height };
+  const bottomLeft = { x: 0, y: height };
 
   return (
-    <Stage width={width + skewOffset} height={height}>
+    <Stage width={baseLength} height={height}>
       <Layer>
         <Line
-          points={parallelogramPoints}
+          points={[
+            bottomLeft.x, bottomLeft.y,
+            bottomRight.x, bottomRight.y,
+            topRight.x, topRight.y,
+            topLeft.x, topLeft.y
+          ]}
           closed
-          fill="yellow"
+          fill="purple"
         />
       </Layer>
     </Stage>
@@ -39,7 +27,7 @@ function Parallelogram({ width, height, skew }) {
 }
 
 Parallelogram.propTypes = {
-  width: PropTypes.number.isRequired,
+  baseLength: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   skew: PropTypes.number.isRequired,
 };

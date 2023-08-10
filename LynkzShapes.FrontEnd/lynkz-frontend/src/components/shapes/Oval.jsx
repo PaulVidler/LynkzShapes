@@ -14,7 +14,7 @@ function Oval({ width, height }) {
           y={centerY}
           radiusX={centerX}
           radiusY={centerY}
-          fill="purple"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

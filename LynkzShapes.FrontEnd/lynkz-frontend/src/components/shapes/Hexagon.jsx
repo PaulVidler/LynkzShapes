@@ -14,7 +14,7 @@ function Hexagon({ sideLength }) {
           x={centerX}
           y={centerX}
           radius={radius}
-          fill="orange"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

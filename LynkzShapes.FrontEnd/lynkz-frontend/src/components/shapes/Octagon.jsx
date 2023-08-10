@@ -14,7 +14,7 @@ function Octagon({ sideLength }) {
           x={centerX}
           y={centerX}
           radius={radius}
-          fill="blue"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>
