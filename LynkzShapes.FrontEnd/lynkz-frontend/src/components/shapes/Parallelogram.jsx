@@ -19,7 +19,7 @@ function Parallelogram({ baseLength, height, skew }) {
             topLeft.x, topLeft.y
           ]}
           closed
-          fill="purple"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

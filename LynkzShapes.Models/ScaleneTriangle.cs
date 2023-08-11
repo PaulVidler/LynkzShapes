@@ -21,11 +21,11 @@
         public IDictionary<string, double> GetDimensions()
         {
             return new Dictionary<string, double>
-        {
-            { "SideA", _sideA },
-            { "SideB", _sideB },
-            { "SideC", _sideC }
-        };
+            {
+                { "SideA", _sideA },
+                { "SideB", _sideB },
+                { "SideC", _sideC }
+            };
         }
     }
 

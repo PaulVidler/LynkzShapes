@@ -24,9 +24,9 @@ namespace LynkzShapes.ShapeParsers.ComplexShapes
             }
 
             return new Dictionary<string, double>
-                {
-                    { "Radius", value }
-                };
+            {
+                { "Radius", value }
+            };
         }
     }
 }

@@ -17,9 +17,9 @@
         public IDictionary<string, double> GetDimensions()
         {
             return new Dictionary<string, double>
-        {
-            { "Side", _side }
-        };
+            {
+                { "Side", _side }
+            };
         }
     }
 

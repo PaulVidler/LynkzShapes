@@ -19,10 +19,10 @@
         public IDictionary<string, double> GetDimensions()
         {
             return new Dictionary<string, double>
-        {
-            { "BaseLength", _baseLength },
-            { "Height", _height }
-        };
+            {
+                { "BaseLength", _baseLength },
+                { "Height", _height }
+            };
         }
     }
 

@@ -59,7 +59,7 @@ namespace LynkzShapes.Factories
                     break;
             }
 
-            return null; // Shape type not supported or invalid dimension for the specified shape type.
+            return null; // Shape type not supported or invalid dimension etc
         }
     }
 

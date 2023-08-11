@@ -44,7 +44,7 @@ function IsoscelesTriangle({ baseLength, height }) {
         <Line
           points={points.flatMap((point) => [point.x, point.y])}
           closed
-          fill="purple"
+          fill="#a0b43b"
         />
       </Layer>
     </Stage>

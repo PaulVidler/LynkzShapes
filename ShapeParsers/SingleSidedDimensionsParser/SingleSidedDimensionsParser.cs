@@ -54,7 +54,6 @@
                 // Regular expression patterns to find numbers followed by various terms for side length
                 string sidePattern = @"\b(side|wide|width|edge|side length|length of side)\b(?:\s*of)?\s*(\d+(\.\d+)?)";
 
-            // Find the first match for any of the side length patterns in the input string
                 Match sideMatch = Regex.Match(input, sidePattern, RegexOptions.IgnoreCase);
 
 
@@ -66,11 +65,7 @@
                     };
                 }
 
-                // come back to this, this is heinous    
-                return new Dictionary<string, double>
-                {
-                    { "SideLength", 100 }
-                };
-            }
+            return null;
+        }
         }
     }

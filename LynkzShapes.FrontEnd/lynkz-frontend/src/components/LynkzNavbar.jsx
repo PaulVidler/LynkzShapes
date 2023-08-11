@@ -1,23 +1,28 @@
-import Container from 'react-bootstrap/Container';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import LynkzLogo from '../img/logo-white.svg';
+import Nav from 'react-bootstrap/Nav';
+import SuperMegaWowLogo from '../img/lynkz_header_img.png';
 
-function LynkzNavbar() {
+const LynkzNavbar = () => {
   return (
-    <>
-      <Navbar className="bg-body-tertiary" style={{ backgroundColor: "#032233", paddingLeft: "2rem" }}>
-        <Container >
-            <img
-              alt=""
-              src={LynkzLogo}
-              width="150"
-              height="150"
-              className="d-inline-block align-top"
-            />
-        </Container>
-      </Navbar>
-    </>
+    <Navbar style={{ backgroundColor: '#032233' }} variant="dark">
+      <Navbar.Brand href="/">
+        <img
+          src={SuperMegaWowLogo}
+          width="300"
+          height="auto" 
+          className="d-inline-block align-top"
+          alt="SuperMegaWowLogo"
+        />
+      </Navbar.Brand>
+      <Nav className="ml-auto">
+        <Nav.Item className="text-white" style={{ fontSize: '14px', marginRight: '1rem' }}>
+          Lynkz Coding Challenge - Paul Vidler
+        </Nav.Item>
+      </Nav>
+    </Navbar>
   );
-}
+};
 
 export default LynkzNavbar;
+

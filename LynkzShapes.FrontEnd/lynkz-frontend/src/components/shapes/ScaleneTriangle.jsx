@@ -5,7 +5,6 @@ import { Stage, Layer, Line } from "react-konva";
 function ScaleneTriangle({ sideA, sideB, sideC }) {
   const angleA = Math.acos((sideB * sideB + sideC * sideC - sideA * sideA) / (2 * sideB * sideC));
   const angleB = Math.acos((sideA * sideA + sideC * sideC - sideB * sideB) / (2 * sideA * sideC));
-  const angleC = Math.PI - angleA - angleB;
 
   const pointAx = 0;
   const pointAy = 0;
@@ -20,7 +19,6 @@ function ScaleneTriangle({ sideA, sideB, sideC }) {
 
   // to do:  Stick in an error toast for issues with a non-closing shape.
 
-
   return (
     <Stage width={sideC} height={sideB}>
       <Layer>
@@ -28,6 +26,8 @@ function ScaleneTriangle({ sideA, sideB, sideC }) {
           points={trianglePoints}
           closed
           fill="#a0b43b"
+          stroke="#000000" // Outline color to show non-closing shapes
+          strokeWidth={2} // Outline width to show non-closing shapes
         />
       </Layer>
     </Stage>
