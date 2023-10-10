@@ -1,6 +1,6 @@
-# Lynkz - Coding Challenge by Paul Vidler
+# Coding Challenge by Paul Vidler
 
-This project is a coding challenge submission by Paul Vidler for Lynkz. It's a React web application with a backend API built using .NET 7.
+This project is a coding challenge submission by Paul Vidler for ****. It's a React web application with a backend API built using .NET 7.
 
 ## Description
 
